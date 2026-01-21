@@ -1,13 +1,9 @@
-
 #!/bin/bash
-
-# Script versión 1.0.x mínima
+# PRueba SMG
 # Lee IPs de ip.txt y ejecuta nxc smb
-
+# hackingyseguridad.com 2026
 while IFS= read -r IP; do
     if [ -n "$IP" ]; then
-        echo "Probando: $IP"
         nxc smb "$IP"
-        echo "-------------------"
     fi
 done < ip.txt
