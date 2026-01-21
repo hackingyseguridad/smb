@@ -2,4 +2,4 @@
 
 
 
-nmap -sV -p 139,445  $1
+nmap -Pn -sVC -p 139,445 $1 --script smb-vuln-ms17-010 
