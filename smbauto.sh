@@ -1,5 +1,5 @@
 #!/bin/sh
-# Prueba SMB 
+# Prueba servicio SMB Samba
 # Lee IPs de ip.txt y ejecuta nxc smb
 # hackingyseguridad.com 2026
 
