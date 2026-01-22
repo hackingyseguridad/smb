@@ -21,10 +21,11 @@ SMB v1 (Server Message Block versión 1) es un protocolo antiguo, inseguro y obs
 
 - Múltiples vulnerabilidades documentadas (CVE-2017-0143, etc.).
 
+**Detecta version**
 
-Prueba simple de SMB, SO, versión
-
-nxc smb 10.0.0.1
+- prueba simple de SMB, SO, versión:  $nxc smb 10.0.0.1
+- 
+- nmap 
 
 ***EthernalBlue*** es un exploit creado por la NSA como herramienta de ciberseguridad. El nombre oficial del exploit, proporcionado por Microsoft, es MS17-010. Este exploit no es específico de dispositivos Windows, sino que afecta a cualquier dispositivo compatible con el protocolo de servidor SMBv1 de Microsoft
 
