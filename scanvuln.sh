@@ -47,6 +47,7 @@ print_banner() {
     echo "╔══════════════════════════════════════════════════════╗"
     echo "║           MS17-010 SMB RCE Detection Tool           ║"
     echo "║                    Version $VERSION                    ║"
+    echo "║        http://www.hackingyseguridad.com/ 2026        ║"
     echo "╚══════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }
