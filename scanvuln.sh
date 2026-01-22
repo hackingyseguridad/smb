@@ -20,8 +20,8 @@
 # ./scanvuln.sh -t 192.168.1.100 -p 139
 ############################################################################
 
-VERSION="1.0.0"
-SCRIPT_NAME="ms17-010_detector.sh"
+VERSION="1.0.1"
+SCRIPT_NAME="scanvuln.sh"
 
 # Colors for output
 RED='\033[0;31m'
