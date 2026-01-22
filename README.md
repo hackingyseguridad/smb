@@ -53,7 +53,7 @@ echo -e "\x00\x00\x00\x90\xff\x53\x4d\x42\x25\x00" | nc -w1 192.168.1.100 445 | 
 
 **SMBv1:** vulnerabilidad CVE-2017-0143, gravedad 8.8, de ejecucion remota de codigo (RCE), en Windows con SMBv1 (ms17-010)
 
-***EthernalBlue*** es un exploit creado por la NSA como herramienta de ciberseguridad. El nombre oficial del exploit, proporcionado por Microsoft, es **MS17-010**. Este exploit no es específico de dispositivos Windows, sino que afecta a cualquier dispositivo compatible con el protocolo de servidor SMBv1 de Microsoft
+***EternalBlue*** es un exploit creado por la NSA como herramienta de ciberseguridad. El nombre oficial del exploit, proporcionado por Microsoft, es **MS17-010**. Este exploit no es específico de dispositivos Windows, sino que afecta a cualquier dispositivo compatible con el protocolo de servidor SMBv1 de Microsoft
 
 <img style="float:left" alt="SMBv1" src="https://github.com/hackingyseguridad/smb/blob/main/smb.png">
 
