@@ -37,6 +37,7 @@ SMBv1 en: Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows
 
 https://www.exploit-db.com/exploits/41891
 
+https://nmap.org/nsedoc/scripts/smb-vuln-ms17-010.html
 
 #
 http://www.hackingyseguridad.com/
