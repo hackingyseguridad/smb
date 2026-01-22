@@ -1,10 +1,10 @@
 ```
- ███████╗ ███╗   ███╗ ██████╗
-██╔════╝ ████╗ ████║ ██╔══██╗
-███████╗ ██╔████╔██║ ██████╔╝
-╚════██║ ██║╚██╔╝██║ ██╔══██╗
-███████║ ██║ ╚═╝ ██║ ██████╔╝
-╚══════╝ ╚═╝     ╚═╝ ╚═════╝
+███████╗███╗   ███╗██████╗               ██
+██╔════╝████╗ ████║██╔══██╗             ║██║
+███████╗██╔████╔██║██████╔╝    ██║   ██ ║██║
+╚════██║██║╚██╔╝██║██╔══██╗    ╚██╗ ██ ╔╝██║
+███████║██║ ╚═╝ ██║██████╔╝     ╚████╔╝  ██║
+╚══════╝╚═╝     ╚═╝╚═════╝       ╚═══╝   ╚═╝
 ```
 SMB es un protocolo de red que permite compartir archivos, impresoras y otros recursos entre maquinas. 
 SMB v1 (Server Message Block versión 1) es un protocolo antiguo, inseguro y obsoleto para compartir archivos en red.
