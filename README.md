@@ -61,8 +61,8 @@ SMBv1 en: Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows
 
 https://www.exploit-db.com/exploits/41891
 
-**Scripts**:
-
+**Scripts** en : https://github.com/hackingyseguridad/smb/
+ 
 - Configuraciones inseguras y filtración de información:
 
 SMB sin autenticación (Null Session): Permite enumerar usuarios, shares y otra información del sistema sin credenciales. Scripts: scansmbnull.sh, smbuserenum.sh, scansmb.sh.
