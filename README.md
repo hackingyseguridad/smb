@@ -64,9 +64,13 @@ https://www.exploit-db.com/exploits/41891
 **Scripts** en : https://github.com/hackingyseguridad/smb/
 
 | `scansmbnull.sh` | Detecta y enumera sesiones nulas (Null Sessions). |
+
 | `ms08-068_tester.sh` | Prueba para la vulnerabilidad MS08-068 (CVE-2008-4036). |
+
 | `scansmbghost.sh` | Detecta sistemas potencialmente vulnerables a SMBGhost (CVE-2020-0796). |
+
 | `smbuserenum.sh` | Enumera usuarios a través de SMB. |
+
 | `bruteinvsmb.sh` | Realiza fuerza bruta inversa de credenciales. |
  
 - Configuraciones inseguras y filtración de información:
