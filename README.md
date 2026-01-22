@@ -61,6 +61,38 @@ SMBv1 en: Microsoft Windows Vista SP2; Windows Server 2008 SP2 y R2 SP1; Windows
 
 https://www.exploit-db.com/exploits/41891
 
+**Scripts**:
+
+- Configuraciones Inseguras y Filtración de Información:
+
+SMB sin autenticación (Null Session): Permite enumerar usuarios, shares y otra información del sistema sin credenciales.
+
+Scripts: scansmbnull.sh, smbuserenum.sh, scansmb.sh.
+
+- Autenticación Débil y Fuerza Bruta:
+
+Contraseñas por defecto, débiles o adivinables por fuerza bruta directa e inversa.
+
+Scripts: bruteinvsmb.sh (probablemente para fuerza bruta inversa), otros comandos en el README prueban credenciales simples.
+
+- Vulnerabilidades Históricas:
+
+CVE-2008-4036 (MS08-068): Una vulnerabilidad de escalada de privilegios local en SMB.
+
+Script: ms08-068_tester.sh.
+
+CVE-2020-0796 (SMBGhost): Un bug de desbordamiento de búfer en SMBv3.
+
+Script: scansmbghost.sh.
+
+- Acceso No Autorizado a Recursos Compartidos:
+
+Shares configurados con permisos excesivos (como acceso de solo lectura o escritura para "guest").
+
+Scripts: automontar.sh, smbauto.sh, smbescribefichero.sh (para escribir un archivo), scansmbfile.sh (para buscar archivos).
+
+
+
 https://nmap.org/nsedoc/scripts/smb-vuln-ms17-010.html
 
 #
