@@ -23,7 +23,7 @@ SMB v1 (Server Message Block versión 1) es un protocolo antiguo, inseguro y obs
 
 **Detecta version**
 
-- prueba simple de SMB, SO, versión:  $nxc smb 10.0.0.1
+- nxc smb 10.0.0.1
 -   
 - nmap -Pn -sVC -p 139,445 10.0.0.1 --script smb-vuln-ms17-010  
 
