@@ -21,7 +21,7 @@ SMB v1 (Server Message Block versión 1), inseguro y obsoleto para compartir arc
 
 - Múltiples vulnerabilidades documentadas (CVE-2017-0143, etc.).
 
-**Detecta version**
+**Detectar version:**
 
 - nxc smb 10.0.0.1
 - smbclient -L //10.0.0.1/ -m NT1  
