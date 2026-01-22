@@ -25,7 +25,8 @@ SMB v1 (Server Message Block versión 1), inseguro y obsoleto para compartir arc
 
 - nxc smb 10.0.0.1
 - smbclient -L //10.0.0.1/ -m NT1  
-- nmap -Pn -sVC -p 139,445 10.0.0.1 --script smb-vuln-ms17-010  
+- nmap -Pn -sVC -p 139,445 10.0.0.1 --script smb-vuln-ms17-010
+- sudo mount -t cifs //10.0.0.1/Public /mnt -o guest
 
 **SMBv1:** vulnerabilidad CVE-2017-0143, gravedad 8.8, de ejecucion remota de codigo (RCE), en Windows con SMBv1 (ms17-010)
 
