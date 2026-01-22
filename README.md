@@ -11,6 +11,19 @@
 SMB es un protocolo de red que permite compartir archivos, impresoras y otros recursos entre maquinas. 
 SMB v1 (Server Message Block versión 1) es un protocolo antiguo, inseguro y obsoleto para compartir archivos en red.
 
+***SMB v1 - Inseguro**
+
+- Sin cifrado: Transmite datos en texto plano, incluyendo usuarios y contraseñas.
+
+- Vulnerabilidades graves: Explotado por malware 
+
+- WannaCry: Ransomware que afectó a millones en 2017. EternalBlue: Exploit desarrollado por la NSA, usado en WannaCry.
+
+- NotPetya: Malware que causó pérdidas billonarias.
+
+- Múltiples vulnerabilidades documentadas (CVE-2017-0143, etc.).
+
+
 Prueba simple de SMB, SO, versión
 
 nxc smb 10.0.0.1
