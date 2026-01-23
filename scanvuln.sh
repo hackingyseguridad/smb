@@ -1,13 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 # Detecta versión SMB y muestra vulnerabilidades conocidas
+# @antonio_taboada
 
-target=$1
-
-echo "[+] Detectando versión SMB de $target"
-
-# Usa nmap si está disponible
 if command -v nmap &> /dev/null; then
-    nmap -p 445 --script smb-protocols $target
+    nmap -Pn -p 139,445 -sV --script smb-protocols,smb-vuln-ms17-010 $1 $2
 else
     # Método manual con netcat
     echo -e "\x00\x00\x00\x85\xff\x53\x4d\x42\x72\x00\x00\x00\x00\x18\x01\x28" > /tmp/smb_probe.bin
@@ -21,12 +17,3 @@ else
     timeout 3 nc $target 445 < /tmp/smb_probe.bin | strings
 fi
 
-echo ""
-echo "[+] Vulnerabilidades comunes por versión:"
-echo "----------------------------------------"
-echo "SMBv1: MS17-010 (EternalBlue), MS08-068"
-echo "SMBv2: Algunas configuraciones malas"
-echo "SMBv3: CVE-2020-0796 (SMBGhost) en Windows 10 v1903-1909"
-echo ""
-echo "[+] Comando para deshabilitar SMBv1 (en Windows):"
-echo "    Set-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters\" SMB1 -Type DWORD -Value 0 -Force"
